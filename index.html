@@ -1,31 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
+		<title>Draw, Odin Project</title>
 		<meta charset="utf-8"> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src='draw.js'></script>
 		<link href="mystyle.css" rel="stylesheet" type="text/css">
-		<title>Google Homepage, Odin Project</title>
 	</head>
 	<body>
-		<div class="toolbar">
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#news">News</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li><a href="#about">About</a></li>
-			</ul>
-		</div>
-		<center>
-			<img class="center" src="https://www.google.com/images/srpr/logo11w.png"></img>
-		</center>
-		<div id="search">
-			<center>
-				<form id="search" method="get" action="http://www.google.com">
-					<input type="text" class="tftextinput" name="q" size="60" maxlength="200">
-					<input type="submit" value="search" class="tfbutton">
-				</form>
-			</center>
-		</div>
-		<div class="footer">
+		<form>
+			<input type='button' value='Reset' id='reset'></input>
+			<input type='button' value='Reset with Random Colors' id='randomColor'></input>
+			<input type='button' value='Reset with Opacity' id='opacity'></input>
+		</form>
+		<div id="grid">
 		</div>
 	</body>
 </html>
